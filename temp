@@ -1,2 +1,5 @@
-mongodb+srv://jashhinger62:Hinger111@cluster0.q3shqfv.mongodb.net/
+"mongodb+srv://jashhinger62:Hinger111@cluster0.q3shqfv.mongodb.net/ "
+
+"rm -f ./.git/index.lock"  // to kill git running process
+
 

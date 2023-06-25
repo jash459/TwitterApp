@@ -1,6 +1,9 @@
 import Tweet from "../models/tweet.js";
-
-class TweetRepository {
+import CrudRepository from "./crud-repository.js";
+class TweetRepository extends CrudRepository {
+  constructor() {
+    super(Tweet);
+  }
   async create(data) {
     try {
       let tweet = await Tweet.create(data);
@@ -30,7 +33,6 @@ class TweetRepository {
     }
   }
 
-
   async deleteTweet(data) {
     try {
       let tweet = await Tweet.deleteOne(data);
@@ -42,5 +44,4 @@ class TweetRepository {
   }
 }
 
-
-export default TweetRepository
+export default TweetRepository;
